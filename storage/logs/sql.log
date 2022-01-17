@@ -1,0 +1,120 @@
+
+2022/01/14 13:44:23 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.780ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 13:44:23 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[7.065ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 13:44:23 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[3.754ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go_test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/01/14 13:44:24 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[116.874ms] [rows:0] CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(191) NOT NULL COMMENT '用户名称',`mobile` varchar(191) NOT NULL COMMENT '用户手机号',`password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`create_at` datetime NULL,`update_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX idx_users_mobile (`mobile`),INDEX idx_users_deleted_at (`deleted_at`))
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[2.991ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[1.994ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go_test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.030ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[1.269ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:205
+[2.417ms] [rows:-] SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go_test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[1.398ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[7.157ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go_test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[1.041ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 14:06:08 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[1.343ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go_test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.518ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[7.025ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[6.510ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go_test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.511ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[1.455ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:205
+[2.427ms] [rows:-] SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go_test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[0.535ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[3.034ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go_test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.534ms] [rows:-] SELECT DATABASE()
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[1.477ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/14 21:13:32 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[1.489ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go_test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.511ms] [rows:-] SELECT DATABASE()
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[9.908ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[2.852ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go_test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[0.539ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:205
+[2.335ms] [rows:-] SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go_test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[0.614ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[1.742ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go_test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:234
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/pkg/mod/gorm.io/driver/mysql@v1.2.3/migrator.go:237
+[0.599ms] [rows:1] SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go_test%' ORDER BY SCHEMA_NAME='go_test' DESC limit 1
+
+2022/01/15 09:30:00 D:/Users/tachyon/Golang/jassue-gin/bootstrap/db.go:59
+[0.774ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go_test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
