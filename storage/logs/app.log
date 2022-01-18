@@ -2,3 +2,8 @@
 [2022-01-114 14:06:08.755]	local.info	jassue-gin/main.go:12	log init success!
 [2022-01-114 21:13:32.816]	local.info	jassue-gin/main.go:12	log init success!
 [2022-01-115 09:30:00.215]	local.info	jassue-gin/main.go:12	log init success!
+[2022-01-117 19:30:43.803]	local.info	gin/main.go:12	log init success!
+[2022-01-118 12:20:48.034]	local.info	gin/main.go:12	log init success!
+[2022-01-118 12:23:29.908]	local.info	gin/main.go:12	log init success!
+[2022-01-118 12:24:11.971]	local.info	gin/main.go:12	log init success!
+[2022-01-118 12:27:22.074]	local.info	gin/main.go:12	log init success!
